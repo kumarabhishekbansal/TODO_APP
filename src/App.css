@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  font-size: 62.5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo_div{
+  position: relative;
+    left: 50%;
+  transform:translate(-50%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.input_div{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-size: 2rem;
+}
+.input_div input{
+ text-align: center;
+}
+.icons{
+  position: absolute;
+  right: 0;
+
+}
+div i{
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 3rem;
+}
+.enter_div{
+  margin-left: 50%;
+  transform: translate(-50%);
+  border:0.2rem solid green;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: aquamarine;
+  color: black;
+  text-transform:uppercase;
+}
+
+.navbar_div{
+  background-color: brown;
+}
+input{
+  border:2px solid black;
+  height: 5rem;
+}
+input:focus{
+  background-color: bisque;
+  color: black;
+  font-weight: bold;
+}
+.fa-circle-check{
+  border: 0.4rem solid green;
+  border-radius: 50%;
+  background-color: green;
+}
+.fa-circle-arrow-up{
+  border: 0.4rem solid blue;
+  border-radius: 50%;
+  background-color: blue;
+}
+.fa-circle-arrow-down{
+  border: 0.4rem solid orange;
+  border-radius: 50%;
+  background-color: orange;
+}
+.fa-circle-xmark{
+  border: 0.4rem solid red;
+  border-radius: 50%;
+  background-color: red;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h2 span{
+  font-size: 5rem;
+}
+.h3c{
+  font-size: 4rem;
+}
+h3 span{
+  font-size: 3rem;
+}
+.texttitle{
+  font-size: 3rem;
+  color: blueviolet;
+  font-weight: bold;
+}
+.com{
+  font-size:3rem ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about_parent{
+  margin-left: 50%;
+  transform: translate(-50%);
+  border: 4px solid red;
+}
+.paraabout{
+  font-size: 3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+  font-weight: bold;
+  line-height: 5rem;
+}
+.headabout{
+  font-size: 5rem;
+  color: black;
+  font-weight: bold;
+  color: chocolate;
+}
+.logonav{
+  text-decoration: none;
+  color: black;
+}
+
+div i:hover{
+  transform: scale(0.8,0.8);
+}
+div i:active{
+  transform: scale(1,1);
+}
+
+.removebtn{
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid orange;
+  background-color: orange;
+}
+
+@media screen and (max-width:525px) {
+  div i{
+    font-size: 1.2rem;
+    padding: 0.2rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width:352px) {
+  div i{
+    font-size: 0.8rem;
+    padding: 0rem;
   }
 }
